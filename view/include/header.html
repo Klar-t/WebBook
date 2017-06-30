@@ -1,0 +1,68 @@
+<!--<style type="text/css">
+	.header-tab{
+		padding: 0px 90px;
+		text-align: center;
+		line-height: 44px;
+		background: #efeff0;
+		border-bottom: 1px solid #ddd;
+		position: relative;
+	}
+	.header-tab i{
+		bottom: -1px;
+	}
+	.header-tab i:before{
+		content: '';
+		display: block;
+		height: 2px;
+		width: 34px;
+		margin: 0 auto;
+		background: #777;
+	}
+	.header-tab a:before{
+		content: '\4e66\67b6';
+		display: block;
+		margin: 0 auto;
+	}
+	.header-tab a:first-child:before{
+		content: '\4e66\57ce';
+	}
+	
+	.Swipe-tab{
+		position: relative;
+		overflow: hidden;
+		z-index: 1;
+	}
+	.Swipe-tab i{
+		position: absolute;
+		left: 2px;
+		-webkit-transition: -webkit-transfrom .3s ease-out;
+	}
+	.Swipe-tab-2 i{
+		width: 50%;
+	}
+	.Swipe-tab a{
+		float: left;
+		text-align: center;
+		-webkit-tap-highlight-color: rgba(0,0,0,0);
+	}
+	.Swipe-tab-2 a{
+		width: 50%;
+	}
+	.f-cb:after{
+		clear: both;
+		content: '';
+		display: block;
+		height: 0;
+		overflow: hidden;
+	}
+</style>-->
+
+<div class="header-tab" id="app_header">
+	<!--移动端切忌使用DOM操作动画-->
+	<div class="Swipe-tab Swipe-tab-2 f-cb">
+		<a href="javascript:"></a>
+		<a href="javascript:"></a>
+		<i style="transition-duration: 0s;transfrom:translate3d(0px,0px,0px);"></i><!--所有写在style的CSS属性都要被JS操作的-->
+	</div>
+	<em class="header-user"></em><em class="header-checkin"></em>
+</div>

@@ -1,0 +1,25 @@
+{
+  "name": "webappreader",//名字
+  "version": "1.0.0",//版本
+  "description": "web reader site",
+  "main": "app.js",//开始程序
+  "dependencies": {//需要的包
+    "co-views": "^2.1.0",
+    "auto-reload": "^0.0.2",
+    "koa": "^1.2.0",
+    "ejs": "^2.4.2",
+    "koa-route": "^2.4.2",
+    "koa-views": "^4.1.0",
+    "koa-static-server": "^0.1.8",
+
+    "webpack": "^1.13.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "帅气小王子",//对，这个就是哥哥我了！
+  "license": "ISC"
+}
+//这里说一下，只要在命令行运行 npm install 就可以把需要的包下载下来了，
+//如果有些下载不了的，就只能把需要的包名 一个一个下载咯

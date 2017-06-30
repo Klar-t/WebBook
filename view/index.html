@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<mata name="viewport" content="width=device-width,initialscale=1,user-scalable=no">
+		<mata name="format-detection" content="telephone=no">
+			<link rel="stylesheet" href="/static/css/reset.css" type="text/css"/>
+			<link rel="stylesheet" href="/static/css/all.css" type="text/css"/>
+		<title>书城首页</title>
+		<style type="text/css">
+			.container-warp{
+				height: 100%;
+				overflow: hidden;
+				/*position: relative;*/
+			}
+			/*.container-scroll{
+				position: absolute;
+				top: 45px;
+				bottom: 0px;
+				left: 0px;
+				right: 0px;
+				overflow-y: scroll;
+			}*/
+		</style>
+	</head>
+	<body>
+		<div id="root" style="width:734px;">
+			<div class="container-warp">
+				<% include include/header.html %>
+				<div class="container-scroll">
+					<% include include/index-top.html %>
+					<% include include/index-hot.html %>
+					<% include include/index-recommend.html %>
+					<% include include/index-female.html %>
+					<% include include/index-male.html %>
+					<% include include/index-free.html %>
+					<% include include/index-bottom.html %>
+				</div>
+			</div>
+		</div>
+	</body>
+	<script src="/static/script/vue.js"></script>
+	<script src="/static/script/zepto.min.js"></script>
+	<script src="/static/script/pages/index.js"></script>
+</html>
